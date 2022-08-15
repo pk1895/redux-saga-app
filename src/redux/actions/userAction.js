@@ -1,4 +1,3 @@
-import React from "react";
 import * as actionTypes from "../types/userTypes";
 
 export const getUser = () => {
