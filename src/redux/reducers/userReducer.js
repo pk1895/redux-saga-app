@@ -1,10 +1,6 @@
 import * as actionTypes from "../types/userTypes";
 
 const initialState = {
-  //   id: 0,
-  //   name: "",
-  //   email: "",
-  //   company: {},
   user: [],
 };
 
@@ -15,10 +11,6 @@ const userReducer = (state = initialState, action) => {
       return {
         ...state,
         user: action.user,
-        // id: action.user.id,
-        // name: action.user.name,
-        // email: action.user.email,
-        // company: action.user.company,
       };
 
     default:
