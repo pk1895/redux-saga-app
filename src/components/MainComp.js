@@ -1,11 +1,16 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const MainComp = () => {
-  const voters = ["Lisa Harre", "Andrei Golosov"];
+  const users = useSelector((state) => state.userReducer.user);
+  console.log(users);
+
+  const name = users ? users[0].name : "";
 
   return (
     <div>
-      <h2> Total Votes: </h2>
+      <h2> Hello World </h2>
+      <p>{name}</p>
     </div>
   );
 };

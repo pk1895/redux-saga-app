@@ -5,7 +5,6 @@ const initialState = {
 };
 
 const userReducer = (state = initialState, action) => {
-  debugger;
   switch (action.type) {
     case actionTypes.SET_USER:
       return {
